@@ -25,3 +25,48 @@ Website gồm 4 trang chính:
 - Menu điều hướng ở đầu trang
 
 © 2026 Nguyễn Thanh Nam
+                ┌────────────────────────────────────┐
+                │           MY WEBSITE              │
+                │   Home | About | Projects | Contact│
+                └────────────────────────────────────┘
+
+
+                     👋 Xin chào, tôi là
+                    NGUYỄN THANH NAM
+               Sinh viên Công nghệ Thông tin
+
+              [ Xem dự án ]     [ Liên hệ ]
+
+
+        ─────────────────────────────────────────
+
+                         🧑 GIỚI THIỆU
+
+            Tôi là sinh viên CNTT yêu thích lập trình
+            web và phát triển phần mềm hiện đại.
+
+        ─────────────────────────────────────────
+
+                           💻 DỰ ÁN
+
+              ┌──────────────┐  ┌──────────────┐
+              │  Website CV  │  │  To-do App   │
+              └──────────────┘  └──────────────┘
+
+                    ┌──────────────┐
+                    │ Blog cá nhân │
+                    └──────────────┘
+
+        ─────────────────────────────────────────
+
+                          📩 LIÊN HỆ
+
+                  [ Tên của bạn        ]
+                  [ Email              ]
+                  [ Nội dung           ]
+                  [     GỬI            ]
+
+
+                ─────────────────────────────
+                      © 2026 Nguyễn Thanh Nam
+                ─────────────────────────────
