@@ -26,5 +26,6 @@ Website gồm 4 trang chính:
 
 © 2026 Nguyễn Thanh Nam
              
+<img width="1024" height="558" alt="image" src="https://github.com/user-attachments/assets/f437f690-fe39-4b98-b62c-ed4d841c8b0f" />
 
                     
