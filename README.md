@@ -25,10 +25,11 @@ Website gồm 4 trang chính:
 - Menu điều hướng ở đầu trang
 
 © 2026 Nguyễn Thanh Nam
-<img width="1593" height="852" alt="image" src="https://github.com/user-attachments/assets/2b9cd768-dc1a-4709-a73b-9088f57a971d" /> 
-<img width="1340" height="712" alt="image" src="https://github.com/user-attachments/assets/6439e49c-08fa-4422-a83a-656959d6f3d8" /> 
-<img width="1300" height="660" alt="image" src="https://github.com/user-attachments/assets/48828dfb-eeff-44cf-9af4-76e191e7c284" />
-<img width="1278" height="663" alt="image" src="https://github.com/user-attachments/assets/f30228c0-6605-4411-8788-a2d591d2d205" />
-<img width="1244" height="652" alt="image" src="https://github.com/user-attachments/assets/8726c4b3-d095-47b3-8320-f2a8a38b2adb" />
+<img width="1354" height="728" alt="image" src="https://github.com/user-attachments/assets/5b709e03-6027-4f1d-9ef9-3457c96acd02" />
+<img width="1323" height="698" alt="image" src="https://github.com/user-attachments/assets/570cd00b-e248-4e73-9100-1dd832fedcb5" />
+<img width="1313" height="739" alt="image" src="https://github.com/user-attachments/assets/810dbf2a-a337-4eac-bed8-47ff7a4a1917" />
+<img width="1364" height="703" alt="image" src="https://github.com/user-attachments/assets/14777133-3b2e-47ae-be93-16dc8d433c08" />
+<img width="1363" height="684" alt="image" src="https://github.com/user-attachments/assets/54e5cf85-8244-4949-9ab7-f93f3cf68d41" />
+
 APP:CANVA
 
