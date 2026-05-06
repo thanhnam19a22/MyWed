@@ -28,8 +28,8 @@ Website gồm 4 trang chính:
 <img width="1354" height="728" alt="image" src="https://github.com/user-attachments/assets/5b709e03-6027-4f1d-9ef9-3457c96acd02" />
 <img width="1323" height="698" alt="image" src="https://github.com/user-attachments/assets/570cd00b-e248-4e73-9100-1dd832fedcb5" />
 <img width="1313" height="739" alt="image" src="https://github.com/user-attachments/assets/810dbf2a-a337-4eac-bed8-47ff7a4a1917" />
-<img width="1364" height="703" alt="image" src="https://github.com/user-attachments/assets/14777133-3b2e-47ae-be93-16dc8d433c08" />
-<img width="1363" height="684" alt="image" src="https://github.com/user-attachments/assets/54e5cf85-8244-4949-9ab7-f93f3cf68d41" />
+<img width="<img width="1228" height="652" alt="image" src="https://github.com/user-attachments/assets/4776a824-e06f-4457-aedf-e75c2813e40c" />
+1363" height="684" alt="image" src="https://github.com/user-attachments/assets/54e5cf85-8244-4949-9ab7-f93f3cf68d41" />
 
 APP:CANVA
 
