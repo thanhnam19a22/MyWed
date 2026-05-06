@@ -26,7 +26,7 @@ Website gồm 4 trang chính:
 
 © 2026 Nguyễn Thanh Nam
              
-<img width="853" height="1844" alt="image" src="https://github.com/user-attachments/assets/6ac1c8d1-8bb6-49df-a63c-35491eabcccc" />
+<img width="846" height="1860" alt="image" src="https://github.com/user-attachments/assets/5d7a4fa8-9d74-4231-903a-e2ee6b14fd03" />
 <img width="194" height="494" alt="gioi thieu" src="https://github.com/user-attachments/assets/ea690dbf-02d0-4742-a9bb-66c4a0305409" />
 <img width="178" height="496" alt="du an" src="https://github.com/user-attachments/assets/91d8c08d-da57-4c44-a329-2102d1356018" />
 <img width="200" height="490" alt="chi tiet" src="https://github.com/user-attachments/assets/64929cc6-8edd-4816-9ad2-1c6ecf9295d3" />
