@@ -25,11 +25,9 @@ Website gồm 4 trang chính:
 - Menu điều hướng ở đầu trang
 
 © 2026 Nguyễn Thanh Nam
-<img width="1354" height="728" alt="image" src="https://github.com/user-attachments/assets/5b709e03-6027-4f1d-9ef9-3457c96acd02" />
-<img width="1323" height="698" alt="image" src="https://github.com/user-attachments/assets/570cd00b-e248-4e73-9100-1dd832fedcb5" />
-<img width="1313" height="739" alt="image" src="https://github.com/user-attachments/assets/810dbf2a-a337-4eac-bed8-47ff7a4a1917" />
-<img width="<img width="1228" height="652" alt="image" src="https://github.com/user-attachments/assets/4776a824-e06f-4457-aedf-e75c2813e40c" />
-<img width="1305" height="682" alt="image" src="https://github.com/user-attachments/assets/dcfbba52-4bf2-4aee-8d8c-368315b0e435" />
+<img width="1328" height="731" alt="image" src="https://github.com/user-attachments/assets/04236b2f-bf41-469a-b073-c591182cd7cb" />
+<img width="1317" height="772" alt="image" src="https://github.com/user-attachments/assets/e8a3f3f8-2432-4783-af44-ecbf8f77034a" />
+<img width="1293" height="680" alt="image" src="https://github.com/user-attachments/assets/f7f4b085-759d-4bd2-be81-6dd39f7ba45d" />
 
 APP:CANVA
 
