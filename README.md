@@ -26,11 +26,9 @@ Website gồm 4 trang chính:
 
 © 2026 Nguyễn Thanh Nam
              
+<img width="215" height="472" alt="trang chu" src="https://github.com/user-attachments/assets/c4f70a1f-3f95-4006-960e-c951f7e4221c" />
+<img width="194" height="494" alt="gioi thieu" src="https://github.com/user-attachments/assets/ea690dbf-02d0-4742-a9bb-66c4a0305409" />
+<img width="178" height="496" alt="du an" src="https://github.com/user-attachments/assets/91d8c08d-da57-4c44-a329-2102d1356018" />
+<img width="200" height="490" alt="chi tiet" src="https://github.com/user-attachments/assets/64929cc6-8edd-4816-9ad2-1c6ecf9295d3" />
+<img width="186" height="476" alt="lien he" src="https://github.com/user-attachments/assets/7f42c93e-e1e4-40a2-8bae-b3454eb688d6" />
 
-<img width="960" height="540" alt="chi tiet" src="https://github.com/user-attachments/assets/d7a29aec-a826-458f-bc1f-71f0cd90df5a" />
-<img width="960" height="540" alt="du an" src="https://github.com/user-attachments/assets/e7b9f3d8-ae93-4be6-a6e3-f953d0036e3f" />
-<img width="960" height="540" alt="gioi thieu" src="https://github.com/user-attachments/assets/860624a1-c3c6-49e0-a788-cfcdbe0b74ca" />
-<img width="960" height="540" alt="lien he" src="https://github.com/user-attachments/assets/71e53846-4634-46da-b63a-84b6ffb8a259" />
-<img width="215" height="472" alt="trang chu" src="https://github.com/user-attachments/assets/3cc6435a-5780-4f7b-83fe-e131e2355db3" />
-
-                    
