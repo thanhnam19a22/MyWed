@@ -1,0 +1,205 @@
+/* =========================
+   RESET
+========================= */
+
+body{
+    margin:0;
+    padding:40px;
+    background:#eef4ff;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#1e293b;
+}
+
+/* =========================
+   KHUNG WEBSITE
+========================= */
+
+table[align="center"]{
+    width:1000px !important;
+    border:none;
+    border-radius:20px;
+    overflow:hidden;
+    background:#ffffff;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   HEADER
+========================= */
+
+table[align="center"] tr:first-child td{
+    padding:20px 30px;
+    background:linear-gradient(90deg,#2563eb,#0ea5e9);
+    border:none;
+    color:white;
+}
+
+table[align="center"] tr:first-child strong{
+    font-size:28px;
+    letter-spacing:1px;
+}
+
+table[align="center"] tr:first-child font{
+    color:#e0f2fe;
+    font-size:15px;
+    font-weight:bold;
+}
+
+/* =========================
+   BANNER
+========================= */
+
+table[align="center"] tr:nth-child(2) td{
+    border:none;
+    height:320px;
+    background:linear-gradient(135deg,#1d4ed8,#38bdf8);
+    color:white;
+    font-size:34px;
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+/* =========================
+   GIỚI THIỆU
+========================= */
+
+table[align="center"] tr:nth-child(3) td{
+    padding:40px;
+    border:none;
+}
+
+h3{
+    margin-top:0;
+    font-size:32px;
+    color:#1d4ed8;
+}
+
+p{
+    font-size:16px;
+    line-height:1.8;
+    color:#475569;
+}
+
+font[size="2"]{
+    font-size:15px;
+    color:#334155;
+    font-weight:bold;
+}
+
+/* =========================
+   THANH TRANG TRÍ
+========================= */
+
+hr{
+    border:none;
+    height:4px;
+    background:#38bdf8;
+    margin:14px 0;
+    border-radius:30px;
+}
+
+/* =========================
+   DANH SÁCH DỰ ÁN
+========================= */
+
+table[align="center"] tr:nth-child(4) td{
+    border:none;
+    padding:0 40px 40px;
+}
+
+table[align="center"] tr:nth-child(4) table{
+    border:none;
+    border-spacing:18px;
+}
+
+table[align="center"] tr:nth-child(4) table td{
+    border:none;
+    background:#f1f5f9;
+    border-radius:16px;
+    height:160px !important;
+    font-size:45px;
+    transition:0.3s;
+    box-shadow:0 5px 15px rgba(0,0,0,0.05);
+}
+
+table[align="center"] tr:nth-child(4) table td:hover{
+    transform:translateY(-8px);
+    background:#dbeafe;
+}
+
+/* =========================
+   NÚT TRỞ VỀ
+========================= */
+
+table[align="center"] tr:last-child table:first-child{
+    border:none;
+    margin:auto;
+    background:#2563eb;
+    border-radius:12px;
+    transition:0.3s;
+}
+
+table[align="center"] tr:last-child table:first-child td{
+    border:none;
+    padding:14px 32px;
+    color:white;
+    font-size:15px;
+    letter-spacing:1px;
+    font-weight:bold;
+}
+
+table[align="center"] tr:last-child table:first-child:hover{
+    background:#1d4ed8;
+    transform:scale(1.05);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+table[align="center"] tr:last-child td{
+    border:none;
+    padding:20px 40px 35px;
+}
+
+table[align="center"] tr:last-child table:last-child{
+    border:2px dashed #93c5fd !important;
+    border-radius:12px;
+    overflow:hidden;
+    background:#f8fbff;
+}
+
+table[align="center"] tr:last-child table:last-child td{
+    padding:18px;
+    color:#475569;
+    font-size:14px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:1050px){
+
+    body{
+        padding:15px;
+    }
+
+    table[align="center"]{
+        width:100% !important;
+    }
+
+    table[align="center"] tr:nth-child(2) td{
+        height:220px;
+        font-size:24px;
+    }
+
+    h3{
+        font-size:24px;
+    }
+
+    table[align="center"] tr:nth-child(4) table td{
+        height:100px !important;
+        font-size:30px;
+    }
+}

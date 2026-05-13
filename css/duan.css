@@ -1,0 +1,183 @@
+
+/* =========================
+   RESET + GLOBAL STYLE
+========================= */
+
+body{
+    margin:0;
+    padding:40px;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#eef4ff;
+    color:#1e293b;
+}
+
+/* =========================
+   CONTAINER WEBSITE
+========================= */
+
+table[align="center"]{
+    width:900px !important;
+    border:none;
+    border-radius:16px;
+    overflow:hidden;
+    background:#ffffff;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   HEADER + MENU
+========================= */
+
+strong{
+    color:#0d6efd;
+    font-size:18px;
+}
+
+/* menu */
+a{
+    text-decoration:none;
+    color:#334155;
+    font-weight:600;
+    margin-left:12px;
+    transition:0.3s;
+}
+
+a:hover{
+    color:#0d6efd;
+}
+
+/* active page */
+u strong{
+    color:#0d6efd;
+}
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+h2, h3{
+    color:#0d6efd;
+    margin:15px 0;
+}
+
+/* =========================
+   TEXT STYLE
+========================= */
+
+p{
+    font-size:14.5px;
+    line-height:1.7;
+    color:#475569;
+}
+
+li{
+    margin-bottom:8px;
+    line-height:1.6;
+    color:#334155;
+}
+
+/* =========================
+   HR (divider)
+========================= */
+
+hr{
+    border:none;
+    height:4px;
+    border-radius:10px;
+    background:#dbeafe;
+    margin:10px 0;
+}
+
+/* =========================
+   HERO IMAGE
+========================= */
+
+img{
+    border-radius:50%;
+    border:3px solid #bfdbfe;
+}
+
+/* =========================
+   CARD / BOX STYLE
+========================= */
+
+/* tất cả box viền dashed */
+table[style*="dashed"]{
+    border:2px dashed #93c5fd !important;
+    border-radius:12px;
+    background:#f8fbff;
+}
+
+/* =========================
+   PROJECT CARDS
+========================= */
+
+table[width="100%"] table{
+    background:#ffffff;
+    border-radius:12px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.06);
+    transition:0.3s;
+}
+
+table[width="100%"] table:hover{
+    transform:translateY(-5px);
+}
+
+/* image placeholder */
+td[height]{
+    background:#f1f5ff;
+    color:#93c5fd;
+    font-size:26px;
+}
+
+/* =========================
+   NAV BUTTONS (Prev / Next)
+========================= */
+
+center table td table{
+    border-radius:8px;
+}
+
+center table td:nth-child(2) table td{
+    background:#0d6efd;
+    color:white;
+}
+
+/* =========================
+   CONTACT BOX
+========================= */
+
+table[border="1"] td table{
+    background:#f8fbff;
+    border:1px solid #dbeafe;
+    border-radius:10px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+table[width="100%"][border="1"]{
+    background:#0d6efd;
+    color:white;
+    border:none;
+}
+
+table[width="100%"][border="1"] strong{
+    color:white;
+}
+
+table[width="100%"][border="1"] font{
+    color:#dbeafe;
+}
+
+/* =========================
+   FINAL TITLE
+========================= */
+
+font[size="6"]{
+    color:#0d6efd;
+    font-size:32px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
