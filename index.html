@@ -2,83 +2,66 @@
 <html lang="vi">
 
 <head>
-    <meta charset="UTF-8">
-    <title>My Website</title>
+<meta charset="UTF-8">
+<title>My Website</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- MENU -->
 <header>
-    <div>NAME: NAM</div>
+    <div class="logo">NAM</div>
 
     <nav>
-        <a onclick="show('home')">Home</a> |
-        <a onclick="show('about')">About</a> |
-        <a onclick="show('projects')">Projects</a> |
+        <a onclick="show('home')">Home</a>
+        <a onclick="show('about')">About</a>
+        <a onclick="show('projects')">Projects</a>
         <a onclick="show('contact')">Contact</a>
     </nav>
 </header>
 
-<hr>
-
 <!-- HOME -->
-<div id="home">
-    <h1>Trang Chủ</h1>
-
-    <p>
-        Xin chào! Đây là website cá nhân của mình.
-    </p>
-
-    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" width="300">
-</div>
+<section id="home" class="page active">
+    <h1>TRANG CHỦ</h1>
+    <p>Đây là trang home của website.</p>
+</section>
 
 <!-- ABOUT -->
-<div id="about" style="display:none;">
-    <h1>Giới Thiệu</h1>
-
+<section id="about" class="page">
+    <h1>GIỚI THIỆU</h1>
     <p>Mình là sinh viên thích lập trình web.</p>
-
-    <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4" width="300">
-</div>
+</section>
 
 <!-- PROJECTS -->
-<div id="projects" style="display:none;">
-    <h1>Dự Án</h1>
+<section id="projects" class="page">
+    <h1>DỰ ÁN</h1>
 
     <ul>
         <li>Website Portfolio</li>
-        <li>Mini Game JavaScript</li>
+        <li>Mini Game</li>
         <li>Landing Page</li>
     </ul>
-
-    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" width="300">
-</div>
+</section>
 
 <!-- CONTACT -->
-<div id="contact" style="display:none;">
-    <h1>Liên Hệ</h1>
+<section id="contact" class="page">
+    <h1>LIÊN HỆ</h1>
 
     <p>Email: nam@gmail.com</p>
 
-    <input placeholder="Tên"><br><br>
-    <input placeholder="Email"><br><br>
-    <textarea placeholder="Nội dung"></textarea><br><br>
-    <button>Gửi</button>
-
-    <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216" width="300">
-</div>
+    <input placeholder="Tên">
+    <input placeholder="Email">
+    <textarea placeholder="Nội dung"></textarea>
+</section>
 
 <script>
 function show(page){
 
-    let pages = ["home","about","projects","contact"];
+    let pages = document.querySelectorAll('.page');
 
-    pages.forEach(id => {
-        document.getElementById(id).style.display = "none";
-    });
+    pages.forEach(p => p.classList.remove('active'));
 
-    document.getElementById(page).style.display = "block";
+    document.getElementById(page).classList.add('active');
 }
 </script>
 
