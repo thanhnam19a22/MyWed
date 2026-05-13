@@ -1,85 +1,66 @@
 <!DOCTYPE html>
 <html lang="vi">
-
 <head>
     <meta charset="UTF-8">
-    <title>My Website</title>
-    <!-- Gắn link style.css vào đây -->
-    <link rel="stylesheet" href="style.css">[cite: 4, 5]
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Thanh Nam - Portfolio</title>
+    <!-- Gắn link style.css chuẩn[cite: 4, 5] -->
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- MENU -->
 <header>
     <div>NAME: NAM</div>
-
     <nav>
-        <a onclick="show('home')">Home</a> |
-        <a onclick="show('about')">About</a> |
-        <a onclick="show('projects')">Projects</a> |
+        <a onclick="show('home')">Home</a>
+        <a onclick="show('about')">About</a>
+        <a onclick="show('projects')">Projects</a>
         <a onclick="show('contact')">Contact</a>
     </nav>
 </header>
 
-<hr>
-
 <!-- HOME -->
 <div id="home">
     <h1>Trang Chủ</h1>
-
-    <p>
-        Xin chào! Đây là website cá nhân của mình.
-    </p>
-
+    <p>Xin chào! Đây là website cá nhân của mình.</p>
     <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" width="300">
 </div>
 
 <!-- ABOUT -->
 <div id="about" style="display:none;">
     <h1>Giới Thiệu</h1>
-
     <p>Mình là sinh viên thích lập trình web.</p>
-
     <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4" width="300">
 </div>
 
 <!-- PROJECTS -->
 <div id="projects" style="display:none;">
     <h1>Dự Án</h1>
-
     <ul>
         <li>Website Portfolio</li>
         <li>Mini Game JavaScript</li>
         <li>Landing Page</li>
     </ul>
-
     <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" width="300">
 </div>
 
 <!-- CONTACT -->
 <div id="contact" style="display:none;">
     <h1>Liên Hệ</h1>
-
     <p>Email: nam@gmail.com</p>
-
     <input placeholder="Tên"><br><br>
     <input placeholder="Email"><br><br>
     <textarea placeholder="Nội dung"></textarea><br><br>
     <button>Gửi</button>
-
     <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216" width="300">
 </div>
 
 <script>
 function show(page){
-
     let pages = ["home","about","projects","contact"];
-
     pages.forEach(id => {
         document.getElementById(id).style.display = "none";
     });
-
     document.getElementById(page).style.display = "block";
 }
 </script>
