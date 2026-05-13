@@ -2,103 +2,73 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Trang Chủ - Wireframe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
-<body bgcolor="#f0f0f0">
+<body>
 
-    <!-- Container chính để tạo khung viền bao quanh toàn bộ trang -->
-    <table border="1" align="center" width="600" bgcolor="#ffffff" cellpadding="20" cellspacing="0">
-        <tr>
-            <td>
-                
-                <!-- PHẦN 1: HEADER (Logo và Menu) -->
-                <table width="100%" border="0">
-                    <tr>
-                        <td align="left">
-                            <strong>LOGO / NAN EEY</strong>
-                        </td>
-                        <td align="right">
-                            <a href="#">Home</a> &nbsp; 
-                            <a href="#">Giới thiệu</a> &nbsp; 
-                            <a href="#">Dự án</a> &nbsp; 
-                            <a href="#">Liên hệ</a>
-                        </td>
-                    </tr>
-                </table>
+    <!-- =========================
+            HEADER
+    ========================= -->
 
-                <hr size="1" color="#cccccc">
+    <header>
 
-                <!-- PHẦN 2: HERO SECTION (Vùng có vòng tròn và nút Bắt đầu) -->
-                <table width="100%" border="0" cellpadding="30">
-                    <tr>
-                        <td align="center">
-                            <!-- Giả lập vòng tròn bằng một ảnh placeholder -->
-                            <img src="https://via.placeholder.com/100/cccccc/ffffff?text=O" alt="Avatar" width="100" style="border-radius: 50%;">
-                            <br><br><br>
-                            <table border="1" cellpadding="10" cellspacing="0">
-                                <tr>
-                                    <td align="center"><strong>BẮT ĐẦU</strong></td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
+        <div class="logo">NAM</div>
 
-                <hr size="1" color="#cccccc">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">Giới thiệu</a>
+            <a href="projects.html">Dự án</a>
+            <a href="gallery.html">Chi tiết</a>
+            <a href="contact.html">Liên hệ</a>
+        </nav>
 
-                <!-- PHẦN 3: DỊCH VỤ (Thiết kế, Mode, Deliver) -->
-                <table width="100%" border="0" cellpadding="10">
-                    <tr align="center">
-                        <td width="33%">
-                            <p>⚒</p>
-                            <h3>thiết kế</h3>
-                            <p><small>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small></p>
-                        </td>
-                        <td width="33%">
-                            <p>&lt;/&gt;</p>
-                            <h3>mode</h3>
-                            <p><small>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small></p>
-                        </td>
-                        <td width="33%">
-                            <p>🚚</p>
-                            <h3>Deliver</h3>
-                            <p><small>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small></p>
-                        </td>
-                    </tr>
-                </table>
+    </header>
 
-                <br>
+    <!-- =========================
+            HOME
+    ========================= -->
 
-                <!-- PHẦN 4: DỰ ÁN (Dự án tiêu biểu) -->
-                <table width="100%" border="0">
-                    <tr>
-                        <td colspan="2">
-                            <h2>DỰ ÁN</h2>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td width="40%" align="center">
-                            <!-- Giả lập khung hình ảnh dự án -->
-                            <table border="1" width="100%" height="100">
-                                <tr>
-                                    <td align="center" valign="middle">X</td>
-                                </tr>
-                            </table>
-                        </td>
-                        <td width="60%" valign="top">
-                            <h3>featured project</h3>
-                            <hr align="left" width="80%">
-                            <hr align="left" width="60%">
-                            <hr align="left" width="90%">
-                        </td>
-                    </tr>
-                </table>
+    <section class="home">
 
-            </td>
-        </tr>
-    </table>
+        <div class="home-text">
 
-    <p align="center"><font size="5">TRANG CHỦ</font></p>
+            <h1>Xin chào, mình là Nguyễn Thanh Nam</h1>
+
+            <p>
+                Chào mừng bạn đến với website cá nhân của mình.
+                Đây là nơi giới thiệu bản thân, kỹ năng và các dự án
+                trong lĩnh vực Công nghệ Thông tin.
+            </p>
+
+            <br>
+
+            <p>
+                Mình yêu thích lập trình website, thiết kế giao diện
+                và phát triển các dự án sáng tạo.
+            </p>
+
+        </div>
+
+        <div class="home-img">
+
+            <img src="https://via.placeholder.com/320x350" alt="Ảnh cá nhân">
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+            FOOTER
+    ========================= -->
+
+    <footer>
+
+        © 2026 Nguyễn Thanh Nam | My Personal Website
+
+    </footer>
 
 </body>
 </html>
