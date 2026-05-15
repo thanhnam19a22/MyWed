@@ -36,4 +36,5 @@ Modern Layout: Sử dụng Grid & Flexbox để tạo nên một cấu trúc v�
 <img width="1317" height="772" alt="image" src="https://github.com/user-attachments/assets/e8a3f3f8-2432-4783-af44-ecbf8f77034a" /> app:canva
 
 <img width="1226" height="791" alt="image" src="https://github.com/user-attachments/assets/e0f86ae7-4b11-4aaa-84f2-9b4edf55169a" /> app:canva
-<img width="1362" height="656" alt="image" src="https://github.com/user-attachments/assets/bc87d2d4-560b-4154-8beb-80a5e5cb5871" /> app:canva cai nay cho t hinh anh minh hoa lay dung chu de va la con trai
+<img width="1362" height="656" alt="image" src="https://github.com/user-attachments/assets/bc87d2d4-560b-4154-8beb-80a5e5cb5871" /> app:canva 
+
