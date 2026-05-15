@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nguyễn Thanh Nam | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <title>Nguyễn Thanh Nam | Professional Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,75 +15,81 @@
             <div class="logo">NAM<span>DEV</span></div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">Experience</a></li>
+                <li><a href="#projects">Showcase</a></li>
+                <li><a href="#contact">Connect</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="home" class="page-section">
-            <div class="container content-center">
-                <div class="avatar-box">
-                    <img src="https://i.pravatar.cc/150?u=nam" alt="Nam Avatar">
+        <section id="home" class="page">
+            <div class="hero-bg-glow"></div>
+            <div class="container hero-inner">
+                <div class="avatar-wrapper">
+                    <img src="https://i.pravatar.cc/300?u=nam" alt="Nam">
+                    <div class="online-status"></div>
                 </div>
-                <p class="greeting">Xin chào, tôi là</p>
+                <span class="badge">Portfolio 2026</span>
                 <h1>Nguyễn Thanh Nam</h1>
-                <p class="subtitle">Sinh viên Công nghệ Thông tin | Web Developer</p>
-                <div class="cta">
-                    <a href="#projects" class="btn-primary">Xem dự án</a>
+                <p class="headline">Kiến tạo trải nghiệm số thông qua Code & Design</p>
+                <div class="btn-group">
+                    <a href="#projects" class="btn-primary">Khám phá ngay</a>
+                    <a href="#contact" class="btn-secondary">Liên hệ</a>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="page-section">
+        <section id="about" class="page">
             <div class="container">
-                <h2 class="section-title">Về Bản Thân</h2>
-                <div class="info-grid">
-                    <div class="info-card">
-                        <i class="fas fa-graduation-cap"></i>
-                        <h3>Học tập</h3>
-                        <p>Chuyên ngành Kỹ thuật phần mềm. Đam mê xây dựng ứng dụng web hiện đại và tối ưu hóa hệ thống.</p>
+                <h2 class="section-title">Chuyên môn & Kỹ năng</h2>
+                <div class="glass-grid">
+                    <div class="glass-card">
+                        <i class="fas fa-layer-group"></i>
+                        <h3>Full-stack Dev</h3>
+                        <p>Xây dựng hệ thống từ giao diện người dùng đến kiến trúc máy chủ.</p>
                     </div>
-                    <div class="info-card">
-                        <i class="fas fa-lightbulb"></i>
-                        <h3>Định hướng</h3>
-                        <p>Trở thành một Full-stack Developer chuyên nghiệp, đóng góp giá trị cho cộng đồng công nghệ.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="page-section">
-            <div class="container">
-                <h2 class="section-title">Dự án Cá nhân</h2>
-                <div class="project-grid">
-                    <div class="project-card">
-                        <h3>Website Portfolio</h3>
-                        <p>Thiết kế Responsive, giao diện tối giản Xanh - Trắng cực kỳ hiện đại.</p>
-                    </div>
-                    <div class="project-card">
-                        <h3>Smart Management</h3>
-                        <p>Hệ thống quản lý thông tin tích hợp các kỹ năng lập trình mới nhất.</p>
+                    <div class="glass-card">
+                        <i class="fas fa-wand-magic-sparkles"></i>
+                        <h3>UI/UX Design</h3>
+                        <p>Thiết kế tinh tế, tập trung vào trải nghiệm mượt mà trên mọi thiết bị.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="page-section">
+        <section id="projects" class="page">
             <div class="container">
-                <h2 class="section-title">Kết nối với Nam</h2>
-                <div class="contact-wrapper">
-                    <div class="contact-info">
-                        <p><i class="fas fa-envelope"></i> nam.nguyen@email.com</p>
-                        <p><i class="fas fa-location-dot"></i> TP. Hồ Chí Minh, Việt Nam</p>
+                <h2 class="section-title">Dự án nổi bật</h2>
+                <div class="project-showcase">
+                    <div class="p-item">
+                        <div class="p-info">
+                            <span>01. Mobile App</span>
+                            <h3>Vivo Lifestyle Concept</h3>
+                        </div>
                     </div>
-                    <form class="contact-form">
-                        <input type="text" placeholder="Họ và tên" required>
-                        <input type="email" placeholder="Email của bạn" required>
-                        <textarea rows="4" placeholder="Lời nhắn..."></textarea>
-                        <button type="submit">Gửi thông tin</button>
+                    <div class="p-item">
+                        <div class="p-info">
+                            <span>02. Web System</span>
+                            <h3>E-Commerce NextGen</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="page">
+            <div class="container">
+                <div class="contact-card-modern">
+                    <h2>Bắt đầu dự án của bạn?</h2>
+                    <p>Hãy để lại lời nhắn, Nam sẽ phản hồi bạn trong thời gian sớm nhất.</p>
+                    <form class="modern-form">
+                        <div class="input-row">
+                            <input type="text" placeholder="Tên của bạn">
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <textarea placeholder="Nội dung ý tưởng của bạn..."></textarea>
+                        <button type="submit">Gửi thông điệp <i class="fas fa-arrow-right"></i></button>
                     </form>
                 </div>
             </div>
@@ -91,7 +97,7 @@
     </main>
 
     <footer>
-        <p>© 2026 Nguyễn Thanh Nam | Designed for Tech Excellence</p>
+        <p>© 2026 Nguyễn Thanh Nam. All rights reserved.</p>
     </footer>
 
 </body>
