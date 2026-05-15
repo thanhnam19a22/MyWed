@@ -1,133 +1,84 @@
 :root {
-    --primary-blue: #002d5f; /* Xanh đậm Header */
-    --accent-blue: #0056ff;
-    --text-dark: #1a1a1a;
+    --primary: #0046be; /* Màu xanh Vivo chuyên nghiệp */
+    --navy: #001a3d;
     --white: #ffffff;
-    --glass-bg: rgba(255, 255, 255, 0.1);
+    --grey: #f5f7fa;
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Plus Jakarta Sans', sans-serif; }
 html { scroll-behavior: smooth; }
 
-.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-.text-center { text-align: center; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 25px; }
 
 /* HEADER */
 header {
-    background: var(--primary-blue);
-    color: white;
-    padding: 20px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(15px);
+    position: fixed; width: 100%; top: 0; z-index: 1000;
+    padding: 20px 0; border-bottom: 1px solid #eee;
 }
 nav { display: flex; justify-content: space-between; align-items: center; }
-.logo { font-weight: 800; font-size: 1.1rem; }
+.logo { font-weight: 800; color: var(--navy); }
+.logo span { color: var(--primary); }
 .nav-links { display: flex; list-style: none; }
-.nav-links a { color: white; text-decoration: none; margin-left: 20px; font-weight: 600; opacity: 0.8; transition: 0.3s; }
-.nav-links a:hover { opacity: 1; color: var(--accent-blue); }
+.nav-links a { text-decoration: none; color: var(--navy); margin-left: 30px; font-weight: 600; font-size: 0.95rem; }
+.nav-links a:hover { color: var(--primary); }
 
 /* SECTIONS */
 .section-full {
-    min-height: 100vh;
-    padding: 120px 0 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    padding-top: 80px; overflow: hidden;
 }
+.bg-dark { background: var(--navy); color: white; }
+.title { font-size: 2.5rem; font-weight: 800; text-align: center; margin-bottom: 50px; }
+.title.white { color: white; }
 
-.v-label {
-    font-weight: 800;
-    font-size: 1.5rem;
-    margin-bottom: 40px;
-    color: var(--primary-blue);
-    text-align: center;
+/* TRANG CHỦ */
+.hero-flex { display: flex; align-items: center; justify-content: space-between; gap: 50px; }
+.hero-text { flex: 1; }
+.badge { background: #e6efff; color: var(--primary); padding: 5px 15px; border-radius: 50px; font-size: 0.8rem; font-weight: 700; }
+h1 { font-size: 4rem; margin: 20px 0; color: var(--navy); }
+.btn-main { 
+    display: inline-block; background: var(--primary); color: white; 
+    padding: 15px 40px; border-radius: 12px; text-decoration: none; 
+    font-weight: 700; margin-top: 30px; box-shadow: 0 10px 20px rgba(0,70,190,0.2);
 }
-.v-label.white { color: white; }
+.hero-img img { width: 400px; height: 500px; border-radius: 30px; object-fit: cover; box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
 
-/* HOME SECTION */
-.avatar-container img {
-    width: 180px;
-    height: 180px;
-    border-radius: 30px;
-    margin-bottom: 30px;
-    box-shadow: 0 0 30px rgba(0, 86, 255, 0.4);
-    object-fit: cover;
-}
-h2 { font-size: 2.5rem; margin-bottom: 15px; color: var(--primary-blue); }
-.hero-desc { font-size: 1.2rem; color: #444; }
+/* GIỚI THIỆU */
+.about-content { display: flex; flex-direction: column; gap: 30px; width: 100%; }
+.about-card-main { position: relative; border-radius: 20px; overflow: hidden; height: 300px; }
+.about-card-main img { width: 100%; height: 100%; object-fit: cover; }
+.overlay-text { position: absolute; bottom: 0; left: 0; padding: 40px; background: linear-gradient(transparent, rgba(0,0,0,0.8)); width: 100%; }
+.skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.skill-box { background: rgba(255,255,255,0.1); padding: 30px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.1); }
+.skill-box i { font-size: 2rem; color: var(--primary); margin-bottom: 15px; }
 
-/* ABOUT SECTION */
-.dark-blue-bg { background: #003566; color: white; }
-.about-hero-card {
-    background: linear-gradient(to right, rgba(0,0,0,0.5), transparent), url('https://i.ibb.co/L9Y0vS4/tech-bg.jpg');
-    background-size: cover;
-    padding: 60px;
-    border-radius: 20px;
-    margin-bottom: 40px;
-    border: 1px solid rgba(255,255,255,0.2);
-}
-.info-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
-.info-item i { font-size: 2rem; color: var(--accent-blue); margin-bottom: 15px; }
-.info-item h4 { margin-bottom: 10px; font-size: 1.2rem; }
-.info-item ul { list-style: none; opacity: 0.8; font-size: 0.9rem; }
+/* DỰ ÁN */
+.project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; width: 100%; }
+.project-card { background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: 0.3s; }
+.project-card:hover { transform: translateY(-10px); }
+.project-card img { width: 100%; height: 200px; object-fit: cover; }
+.p-content { padding: 25px; }
+.tags span { background: #f0f4f8; color: #555; padding: 4px 10px; border-radius: 5px; font-size: 0.75rem; margin-right: 5px; font-weight: 700; }
 
-/* PROJECT SECTION */
-.project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-.project-card {
-    background: white;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    border: 1px solid #eee;
-}
-.p-thumb { height: 180px; border-radius: 10px; margin-bottom: 15px; }
-.p-thumb.dark { background: #1a1a1a; }
-.p-thumb.nature { background: #2d5a27; }
-.p-thumb.ai { background: #002d5f; }
-.project-card h4 { margin-bottom: 10px; color: var(--primary-blue); }
-.project-card p { font-size: 0.85rem; color: #666; margin-bottom: 15px; }
-.tags span {
-    background: var(--primary-blue);
-    color: white;
-    padding: 4px 10px;
-    border-radius: 5px;
-    font-size: 0.7rem;
-    margin-right: 5px;
-}
+/* LIÊN HỆ */
+.contact-bg { background: #00122a; color: white; }
+.contact-flex { display: flex; gap: 50px; align-items: center; width: 100%; }
+.contact-form-box { flex: 1; }
+.contact-form-box form { display: flex; flex-direction: column; gap: 15px; }
+input, textarea { padding: 15px; border-radius: 12px; border: none; background: rgba(255,255,255,0.1); color: white; outline: none; }
+button { padding: 18px; background: var(--primary); color: white; border: none; border-radius: 12px; font-weight: 800; cursor: pointer; }
+.contact-illustration img { width: 100%; border-radius: 20px; margin-bottom: 20px; }
+.socials { display: flex; gap: 20px; font-size: 1.5rem; justify-content: center; }
+.socials a { color: white; opacity: 0.7; }
 
-/* CONTACT SECTION */
-.contact-bg { background: #001a33; color: white; }
-.contact-flex { display: flex; gap: 50px; align-items: center; }
-.contact-form { flex: 1; display: flex; flex-direction: column; gap: 15px; }
-.contact-form input, .contact-form textarea {
-    padding: 15px;
-    border-radius: 8px;
-    border: none;
-    background: rgba(255,255,255,0.1);
-    color: white;
-    outline: none;
-}
-.contact-form button {
-    padding: 15px;
-    background: var(--accent-blue);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-weight: 800;
-    cursor: pointer;
-    box-shadow: 0 4px 15px rgba(0, 86, 255, 0.3);
-}
-.contact-text { flex: 1; }
-.social-icons i { font-size: 2rem; margin-right: 20px; margin-top: 20px; cursor: pointer; transition: 0.3s; }
-.social-icons i:hover { color: var(--accent-blue); }
+footer { padding: 40px; text-align: center; color: #888; font-size: 0.8rem; background: #fff; }
 
-/* FOOTER */
-footer { background: white; padding: 40px; text-align: center; border-top: 1px solid #eee; color: #888; font-size: 0.8rem; }
-
-/* RESPONSIVE */
+/* MOBILE */
 @media (max-width: 768px) {
-    .info-grid, .project-grid, .contact-flex { grid-template-columns: 1fr; flex-direction: column; }
-    h1 { font-size: 2rem; }
+    .section-full { height: auto; padding: 100px 0; }
+    .hero-flex, .project-grid, .contact-flex { flex-direction: column; grid-template-columns: 1fr; }
+    h1 { font-size: 2.5rem; }
 }
