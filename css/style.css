@@ -1,0 +1,61 @@
+/* --- BẢNG MÀU PREMIUM CHỈNH SỬA CHO NAM --- */
+:root {
+  --primary: #0052cc; /* Xanh đậm chính hiệu công nghệ */
+  --primary-hover: #003d99; /* Màu khi di chuột vào (đậm hơn chút) */
+  --navy-deep: #051937; /* Màu nền cho các vùng tối (như About/Contact) */
+  --porcelain: #ffffff; /* Trắng sứ sạch sẽ */
+  --grey-soft: #f4f7fa; /* Màu xám nhạt để phân tách các khối */
+  --text-dark: #091e42; /* Màu chữ chính (không dùng đen tuyền để đỡ mỏi mắt) */
+  --text-light: #505f79; /* Màu chữ phụ cho các mô tả */
+  --accent-glow: rgba(0, 82, 204, 0.2); /* Màu bóng mờ phát sáng */
+}
+
+/* --- ÁP DỤNG MÀU MỚI VÀO CÁC PHẦN CHÍNH --- */
+
+/* Header với hiệu ứng kính mờ và viền xanh mỏng */
+header {
+  background: rgba(255, 255, 255, 0.85);
+  border-bottom: 2px solid var(--grey-soft);
+}
+
+/* Chỉnh lại font chữ cho tiêu đề nổi bật hơn */
+h1,
+.title {
+  color: var(--navy-deep);
+  background: linear-gradient(to right, var(--navy-deep), var(--primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Hiệu ứng chữ màu Gradient cực xịn */
+}
+
+/* Nút bấm (Button) */
+.btn-main {
+  background: var(--primary);
+  border: none;
+  box-shadow: 0 8px 20px var(--accent-glow);
+}
+
+.btn-main:hover {
+  background: var(--primary-hover);
+}
+
+/* Thẻ dự án (Project Cards) */
+.project-card {
+  background: var(--porcelain);
+  border: 1px solid var(--grey-soft);
+}
+
+.project-card:hover {
+  border-color: var(--primary);
+  box-shadow: 0 15px 35px var(--accent-glow);
+}
+
+/* Các thẻ kỹ năng trong phần About */
+.skill-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.skill-box:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--primary);
+}
