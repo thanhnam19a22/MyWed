@@ -3,98 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nguyễn Thanh Nam | IT Professional</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Nguyễn Thanh Nam | IT Expert Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <nav>
-            <div class="logo">NAM<span>DEV</span></div>
-            <ul>
-                <li><a href="#home">Trang chủ</a></li>
-                <li><a href="#about">Về tôi</a></li>
-                <li><a href="#projects">Dự án</a></li>
-                <li><a href="#contact">Liên hệ</a></li>
+        <nav class="container">
+            <div class="logo">NAM<span>.DEV</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="home" class="full-page">
-        <div class="content-wrapper">
-            <div class="hero-img-container">
-                <img src="https://i.pravatar.cc/150?img=11" alt="Avatar Nam">
+    <section id="home" class="page-section">
+        <div class="container hero-inner">
+            <div class="avatar-box">
+                <img src="https://i.pravatar.cc/150?u=nam" alt="Nam Avatar">
+                <div class="status-dot"></div>
             </div>
-            <h1>Xin chào, tôi là <span>Nguyễn Thanh Nam</span></h1>
-            <p class="typing">Sinh viên Công nghệ Thông tin | Web Developer</p>
-            <a href="#about" class="scroll-down"><i class="fas fa-chevron-down"></i></a>
+            <span class="welcome-text">Xin chào, tôi là</span>
+            <h1>Nguyễn Thanh Nam</h1>
+            <p class="role-text">Future Full-stack Developer & UI/UX Designer</p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn-main">Xem sản phẩm</a>
+                <a href="#contact" class="btn-sub">Liên hệ</a>
+            </div>
         </div>
     </section>
 
-    <section id="about" class="full-page">
-        <div class="content-wrapper">
+    <section id="about" class="page-section">
+        <div class="container">
             <h2 class="section-title">Về Bản Thân</h2>
-            <div class="grid-layout">
-                <div class="info-card">
-                    <i class="fas fa-code"></i>
-                    <h3>Kỹ năng</h3>
-                    <p>Thành thạo HTML5, CSS3, JavaScript. Đang nghiên cứu sâu về ReactJS và cơ sở dữ liệu SQL.</p>
-                </div>
-                <div class="info-card">
-                    <i class="fas fa-user-graduate"></i>
+            <div class="about-grid">
+                <div class="glass-card">
+                    <div class="card-icon"><i class="fas fa-university"></i></div>
                     <h3>Học vấn</h3>
-                    <p>Sinh viên chuyên ngành CNTT. GPA đạt loại Giỏi. Luôn nằm trong top sinh viên tích cực.</p>
+                    <p>Sinh viên CNTT xuất sắc, đam mê nghiên cứu cấu trúc dữ liệu và thuật toán hiện đại.</p>
                 </div>
-                <div class="info-card">
-                    <i class="fas fa-bullseye"></i>
-                    <h3>Mục tiêu</h3>
-                    <p>Xây dựng các giải pháp phần mềm có ích cho cộng đồng và trở thành Senior Dev vào năm 2030.</p>
+                <div class="glass-card">
+                    <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Kỹ năng</h3>
+                    <div class="skill-tags">
+                        <span>React</span><span>Node.js</span><span>Python</span><span>SQL</span>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="full-page">
-        <div class="content-wrapper">
-            <h2 class="section-title">Dự án Tiêu biểu</h2>
-            <div class="project-grid">
-                <div class="project-box">
-                    <div class="img-placeholder"><i class="fas fa-shopping-cart"></i></div>
-                    <h3>Website Bán Hàng</h3>
-                    <p>Tích hợp giỏ hàng và thanh toán trực tuyến.</p>
-                </div>
-                <div class="project-box">
-                    <div class="img-placeholder"><i class="fas fa-tasks"></i></div>
-                    <h3>App Quản lý CV</h3>
-                    <p>Giúp sinh viên tạo và quản lý hồ sơ chuyên nghiệp.</p>
+                <div class="glass-card">
+                    <div class="card-icon"><i class="fas fa-heart"></i></div>
+                    <h3>Đam mê</h3>
+                    <p>Xây dựng các ứng dụng mang lại giá trị thực tế cho người dùng và tối ưu hóa hệ thống.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="full-page">
-        <div class="content-wrapper">
-            <h2 class="section-title">Liên hệ</h2>
-            <div class="contact-container">
-                <div class="contact-text">
-                    <p><i class="fas fa-envelope"></i> nam.it2026@gmail.com</p>
-                    <p><i class="fas fa-phone"></i> (+84) 123 456 789</p>
-                    <p><i class="fas fa-map-marker-alt"></i> TP. Hồ Chí Minh, Việt Nam</p>
+    <section id="projects" class="page-section">
+        <div class="container">
+            <h2 class="section-title">Dự án Cá nhân</h2>
+            <div class="project-layout">
+                <div class="project-card">
+                    <div class="p-thumb">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <div class="p-desc">
+                        <h3>E-Commerce Web</h3>
+                        <p>Website bán hàng chuẩn SEO, tích hợp thanh toán và quản lý kho hàng.</p>
+                    </div>
                 </div>
-                <form>
-                    <input type="text" placeholder="Họ tên của bạn" required>
-                    <input type="email" placeholder="Email" required>
-                    <textarea rows="4" placeholder="Lời nhắn..."></textarea>
-                    <button type="submit">Gửi tin nhắn</button>
+                <div class="project-card">
+                    <div class="p-thumb">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="p-desc">
+                        <h3>Management App</h3>
+                        <p>Ứng dụng quản lý thời gian biểu thông minh dành cho sinh viên.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="page-section">
+        <div class="container">
+            <div class="contact-card">
+                <div class="contact-header">
+                    <h2>Kết nối với Nam</h2>
+                    <p>Hãy để lại lời nhắn, tôi sẽ phản hồi trong vòng 24h.</p>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Họ và tên" required>
+                        <input type="email" placeholder="Email của bạn" required>
+                    </div>
+                    <textarea placeholder="Nội dung lời nhắn..." rows="5"></textarea>
+                    <button type="submit" class="submit-btn">Gửi thông tin ngay <i class="fas fa-paper-plane"></i></button>
                 </form>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>© 2026 Nguyễn Thanh Nam. All rights reserved.</p>
+        <p>© 2026 Nguyễn Thanh Nam | Thiết kế bởi Nam.Dev</p>
     </footer>
 
 </body>
