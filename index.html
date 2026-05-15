@@ -3,67 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nguyễn Thanh Nam - Portfolio</title>
-    <!-- Gắn link style.css chuẩn[cite: 4, 5] -->
-    <link rel="stylesheet" href="style.css">
+    <title>Nguyễn Thanh Nam - Personal Website</title>
 </head>
 <body>
 
-<header>
-    <div>NAME: NAM</div>
-    <nav>
-        <a onclick="show('home')">Home</a>
-        <a onclick="show('about')">About</a>
-        <a onclick="show('projects')">Projects</a>
-        <a onclick="show('contact')">Contact</a>
-    </nav>
-</header>
+    <!-- HEADER: Menu điều hướng chung cho tất cả các trang -->
+    <header>
+        <nav>
+            <strong>NGUYỄN THANH NAM</strong>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<!-- HOME -->
-<div id="home">
-    <h1>Trang Chủ</h1>
-    <p>Xin chào! Đây là website cá nhân của mình.</p>
-    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" width="300">
-</div>
+    <main>
+        <!-- PHẦN 1: HOME (Hình ảnh cá nhân & Giới thiệu tổng quan) -->
+        <section id="home">
+            <h1>Chào mừng bạn đến với Website của tôi</h1>
+            <p>Tôi là Nguyễn Thanh Nam, sinh viên CNTT đam mê sáng tạo các giải pháp công nghệ.</p>
+            <!-- Thay link ảnh cá nhân của bạn vào đây -->
+            <img src="https://via.placeholder.com/400x300" alt="Hình ảnh cá nhân Nguyễn Thanh Nam">
+        </section>
 
-<!-- ABOUT -->
-<div id="about" style="display:none;">
-    <h1>Giới Thiệu</h1>
-    <p>Mình là sinh viên thích lập trình web.</p>
-    <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4" width="300">
-</div>
+        <hr> <!-- Dấu ngăn cách giữa các trang trong file demo -->
 
-<!-- PROJECTS -->
-<div id="projects" style="display:none;">
-    <h1>Dự Án</h1>
-    <ul>
-        <li>Website Portfolio</li>
-        <li>Mini Game JavaScript</li>
-        <li>Landing Page</li>
-    </ul>
-    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" width="300">
-</div>
+        <!-- PHẦN 2: ABOUT ME (Thông tin chi tiết, sở thích, định hướng) -->
+        <section id="about">
+            <h2>Giới thiệu bản thân</h2>
+            <div>
+                <h3>Thông tin chung</h3>
+                <p>Họ tên: Nguyễn Thanh Nam</p>
+                <p>Chuyên ngành: Công nghệ thông tin</p>
+                <p>Định hướng: Trở thành một Full-stack Developer chuyên nghiệp.</p>
+            </div>
+            
+            <div>
+                <h3>Sở thích</h3>
+                <ul>
+                    <li>Nghiên cứu công nghệ mới</li>
+                    <li>Tham gia các hoạt động cộng đồng</li>
+                    <li>Thiết kế giao diện người dùng (UI/UX)</li>
+                </ul>
+            </div>
 
-<!-- CONTACT -->
-<div id="contact" style="display:none;">
-    <h1>Liên Hệ</h1>
-    <p>Email: nam@gmail.com</p>
-    <input placeholder="Tên"><br><br>
-    <input placeholder="Email"><br><br>
-    <textarea placeholder="Nội dung"></textarea><br><br>
-    <button>Gửi</button>
-    <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216" width="300">
-</div>
+            <div>
+                <h3>Kỹ năng CNTT</h3>
+                <ul>
+                    <li>Lập trình: HTML, CSS, Javascript</li>
+                    <li>Công cụ: Git, Canva, Figma</li>
+                    <li>Kỹ năng mềm: Làm việc nhóm, Giải quyết vấn đề</li>
+                </ul>
+            </div>
+        </section>
 
-<script>
-function show(page){
-    let pages = ["home","about","projects","contact"];
-    pages.forEach(id => {
-        document.getElementById(id).style.display = "none";
-    });
-    document.getElementById(page).style.display = "block";
-}
-</script>
+        <hr>
+
+        <!-- PHẦN 3: PROJECTS (Danh sách và mô tả các dự án) -->
+        <section id="projects">
+            <h2>Các dự án cá nhân</h2>
+            
+            <!-- Dự án 1 -->
+            <article>
+                <h3>1. Dự án Website Cá nhân</h3>
+                <p>Mô tả: Xây dựng Portfolio để giới thiệu bản thân và kỹ năng.</p>
+                <p>Công nghệ: HTML5, CSS3, Responsive Design.</p>
+                <img src="https://via.placeholder.com/200x150" alt="Demo dự án 1">
+            </article>
+
+            <!-- Dự án 2 -->
+            <article>
+                <h3>2. Dự án Quản lý Học tập</h3>
+                <p>Mô tả: Ứng dụng giúp sinh viên quản lý thời gian biểu và bài tập.</p>
+                <p>Công nghệ: Javascript, LocalStorage.</p>
+                <img src="https://via.placeholder.com/200x150" alt="Demo dự án 2">
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- PHẦN 4: CONTACT (Thông tin liên hệ và Form) -->
+        <section id="contact">
+            <h2>Thông tin liên hệ</h2>
+            <p>Nếu bạn có thắc mắc hay muốn hợp tác, hãy nhắn cho tôi qua form bên dưới hoặc thông tin trực tiếp.</p>
+            
+            <ul>
+                <li>Email: nam.nguyen@example.com</li>
+                <li>Số điện thoại: 0123 456 789</li>
+                <li>Địa chỉ: TP. Hồ Chí Minh</li>
+            </ul>
+
+            <h3>Gửi lời nhắn</h3>
+            <form>
+                <table>
+                    <tr>
+                        <td><label for="name">Họ và tên:</label></td>
+                        <td><input type="text" id="name" name="name" placeholder="Nhập tên bạn"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="email" id="email" name="email" placeholder="Email của bạn"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="message">Nội dung:</label></td>
+                        <td><textarea id="message" name="message" rows="4" cols="30" placeholder="Lời nhắn của bạn..."></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button type="submit">Gửi liên hệ</button></td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER: Thông tin bản quyền cuối trang -->
+    <footer>
+        <p>© 2026 Nguyễn Thanh Nam. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
