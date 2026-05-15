@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NGUYỄN THANH NAM | PORTFOLIO 2026</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div class="logo" onclick="showPage('home')" style="cursor: pointer">
+          🚀 NAM<span>TECH</span>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="javascript:void(0)" onclick="showPage('home')"
+              >Trang Chủ</a
+            >
+          </li>
+          <li>
+            <a href="javascript:void(0)" onclick="showPage('about')"
+              >Giới Thiệu</a
+            >
+          </li>
+          <li>
+            <a href="javascript:void(0)" onclick="showPage('projects')"
+              >Dự Án</a
+            >
+          </li>
+          <li>
+            <a href="javascript:void(0)" onclick="showPage('contact')"
+              >Liên Hệ</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="section-full active-page">
+        <div class="container hero-flex">
+          <div class="hero-text">
+            <span class="badge">Welcome to my world</span>
+            <h1>Nguyễn Thanh Nam</h1>
+            <p>
+              Sinh viên CNTT đam mê sáng tạo các giải pháp công nghệ hiện đại và
+              tối ưu.
+            </p>
+            <button class="btn-main" onclick="showPage('projects')">
+              Khám phá dự án
+            </button>
+          </div>
+          <div class="hero-img">
+            <img
+              src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&q=80&w=600"
+              alt="Nam Portrait"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section-full bg-dark">
+        <div class="container">
+          <h2 class="title white">Giới Thiệu</h2>
+          <div class="about-content">
+            <div class="about-card-main">
+              <img
+                src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=800"
+                alt="Tech"
+              />
+              <div class="overlay-text">
+                <h3>Tư duy & Kỹ năng</h3>
+                <p>
+                  Xây dựng nền tảng vững chắc trong ngành phần mềm và thiết kế
+                  UI/UX.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section-full">
+        <div class="container">
+          <h2 class="title">Dự Án Tiêu Biểu</h2>
+          <div class="project-grid">
+            <div class="project-card">
+              <img
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=500"
+                alt="P1"
+              />
+              <div class="p-content">
+                <h4>Hệ thống EdTech</h4>
+                <div class="tags"><span>React</span></div>
+              </div>
+            </div>
+            <div class="project-card">
+              <img
+                src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=500"
+                alt="P2"
+              />
+              <div class="p-content">
+                <h4>AI Chat-bot</h4>
+                <div class="tags"><span>Python</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section-full contact-bg">
+        <div class="container">
+          <h2 class="title white">Liên Hệ</h2>
+          <div class="contact-flex">
+            <form class="contact-form-box">
+              <input type="text" placeholder="Tên của bạn" />
+              <textarea
+                rows="4"
+                placeholder="Bạn muốn nói gì với Nam?"
+              ></textarea>
+              <button type="submit" class="btn-main">Gửi tin nhắn</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      function showPage(pageId) {
+        const sections = document.querySelectorAll(".section-full");
+        sections.forEach((sec) => sec.classList.remove("active-page"));
+
+        const target = document.getElementById(pageId);
+        target.classList.add("active-page");
+
+        window.scrollTo(0, 0);
+      }
+    </script>
+
+    <footer>
+      <p>© 2026 Nguyễn Thanh Nam | Developed with Passion.</p>
+    </footer>
+  </body>
+</html>
