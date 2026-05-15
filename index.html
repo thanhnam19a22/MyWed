@@ -3,89 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nguyễn Thanh Nam | Portfolio</title>
+    <title>Nguyễn Thanh Nam | IT Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <nav>
-            <div class="logo">NAM.DEV</div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+        <nav class="container">
+            <div class="logo">NAM<span>TECH</span></div>
+            <ul class="nav-menu">
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#projects">Dự án</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="home">
-            <div class="container hero-content">
-                <div class="avatar-wrapper">
-                    <img src="https://i.pravatar.cc/300?img=11" alt="Nguyễn Thanh Nam" class="avatar">
+        <section id="home" class="hero-section">
+            <div class="container hero-wrapper">
+                <div class="hero-text">
+                    <span class="greeting">Chào mừng bạn đến với thế giới của tôi</span>
+                    <h1>Tôi là <span>Nguyễn Thanh Nam</span></h1>
+                    <p>Một Full-stack Developer tương lai, chuyên xây dựng các trải nghiệm kỹ thuật số hiện đại và tinh tế.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
                 </div>
-                <h1>Chào mừng bạn đến với Website của tôi</h1>
-                <p>Tôi là <strong>Nguyễn Thanh Nam</strong>, sinh viên CNTT đam mê sáng tạo các giải pháp công nghệ hiện đại.</p>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=1000&auto=format&fit=crop" alt="Avatar">
+                </div>
             </div>
         </section>
 
-        <section id="about">
+        <section id="about" class="about-section">
             <div class="container">
-                <h2 class="section-title">Giới thiệu bản thân</h2>
-                <div class="about-grid">
-                    <div class="card">
-                        <h3>Thông tin chung</h3>
-                        <p><strong>Họ tên:</strong> Nguyễn Thanh Nam</p>
-                        <p><strong>Chuyên ngành:</strong> Công nghệ thông tin</p>
-                        <p><strong>Định hướng:</strong> Full-stack Developer</p>
+                <h2 class="title">Về Bản Thân</h2>
+                <div class="about-content">
+                    <div class="about-card">
+                        <i class="fas fa-user-graduate"></i>
+                        <h3>Định hướng</h3>
+                        <p>Sinh viên CNTT năm cuối, tập trung vào mảng Web Development và giải thuật tối ưu.</p>
                     </div>
-                    <div class="card">
-                        <h3>Sở thích</h3>
-                        <p>Nghiên cứu các công nghệ mới, thiết kế giao diện UI/UX và học lập trình mỗi ngày.</p>
-                    </div>
-                    <div class="card">
+                    <div class="about-card">
+                        <i class="fas fa-tools"></i>
                         <h3>Kỹ năng</h3>
-                        <ul>
-                            <li>HTML5 & CSS3</li>
-                            <li>Javascript</li>
-                            <li>Git & GitHub</li>
-                        </ul>
+                        <div class="skill-list">
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                            <span>ReactJS</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                    <div class="about-card">
+                        <i class="fas fa-heart"></i>
+                        <h3>Sở thích</h3>
+                        <p>Code dạo, đọc sách công nghệ và tham gia các buổi Hackathon cuối tuần.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="projects">
+        <section id="projects" class="project-section">
             <div class="container">
-                <h2 class="section-title">Dự án cá nhân</h2>
-                <div class="project-list">
-                    <article class="card">
-                        <h3>Website Portfolio</h3>
-                        <p>Xây dựng trang web cá nhân giới thiệu bản thân và kỹ năng lập trình.</p>
-                    </article>
-                    <article class="card">
-                        <h3>App Quản lý học tập</h3>
-                        <p>Ứng dụng giúp theo dõi lịch học và quản lý bài tập hiệu quả hơn.</p>
-                    </article>
+                <h2 class="title">Dự án Tiêu biểu</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="p-img" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800');"></div>
+                        <div class="p-info">
+                            <h3>Smart Home Dashboard</h3>
+                            <p>Ứng dụng quản lý thiết bị thông minh trong gia đình bằng điện thoại.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="p-img" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800');"></div>
+                        <div class="p-info">
+                            <h3>Hệ thống Phân tích Data</h3>
+                            <p>Dùng Python để trực quan hóa dữ liệu người dùng trên sàn TMĐT.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="contact-section">
             <div class="container">
-                <h2 class="section-title">Liên hệ</h2>
-                <div class="contact-wrapper">
+                <div class="contact-container">
                     <div class="contact-info">
-                        <p>📧 nam.nguyen@example.com</p>
-                        <p>📞 0123 456 789</p>
+                        <h2>Liên hệ với Nam</h2>
+                        <p>Đừng ngần ngại kết nối nếu bạn có một ý tưởng tuyệt vời cần hiện thực hóa!</p>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>nam.it.2026@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(+84) 999 888 777</span>
+                        </div>
                     </div>
-                    <form>
-                        <input type="text" placeholder="Họ và tên" required>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Tên của bạn" required>
                         <input type="email" placeholder="Email của bạn" required>
-                        <textarea rows="4" placeholder="Tin nhắn của bạn..."></textarea>
-                        <button type="submit">Gửi tin nhắn</button>
+                        <textarea rows="4" placeholder="Lời nhắn..."></textarea>
+                        <button type="submit">Gửi tin nhắn <i class="fas fa-paper-plane"></i></button>
                     </form>
                 </div>
             </div>
@@ -93,7 +118,7 @@
     </main>
 
     <footer>
-        <p>© 2026 Nguyễn Thanh Nam. All rights reserved.</p>
+        <p>&copy; 2026 Nguyễn Thanh Nam. Made with <i class="fas fa-heart"></i></p>
     </footer>
 
 </body>
