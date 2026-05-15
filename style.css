@@ -1,12 +1,11 @@
-/* --- BIẾN MÀU SẮC CHUẨN VIVO/TECH --- */
+/* --- BIẾN MÀU SẮC CHUẨN VIVO & TECH --- */
 :root {
-    --primary: #0046be;    /* Xanh Navy hiện đại */
-    --navy-dark: #00122a;  /* Xanh đậm chiều sâu */
+    --primary: #0046be;    /* Xanh Vivo đặc trưng */
+    --navy-dark: #00122a;  /* Xanh Navy cho cảm giác chuyên nghiệp */
     --white: #ffffff;
-    --grey-light: #f8fbff;
+    --grey-bg: #f8fbff;
     --text-main: #1d1d1f;
     --text-sub: #6e6e73;
-    --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* --- TỔNG QUAN --- */
@@ -20,7 +19,7 @@
 body { 
     color: var(--text-main); 
     background: var(--white); 
-    overflow-x: hidden; 
+    overflow-x: hidden; /* Chặn cuộn ngang */
     line-height: 1.6;
 }
 
@@ -28,13 +27,12 @@ body {
     max-width: 1200px; 
     margin: 0 auto; 
     padding: 0 25px; 
-    width: 100%;
 }
 
 /* --- THANH MENU (HEADER) --- */
 header {
     background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(15px); /* Hiệu ứng kính mờ xịn */
     position: fixed; 
     width: 100%; 
     top: 0; 
@@ -53,7 +51,7 @@ nav {
     font-weight: 800; 
     font-size: 1.2rem; 
     color: var(--navy-dark); 
-    letter-spacing: -0.5px;
+    text-transform: uppercase;
 }
 
 .logo span { color: var(--primary); }
@@ -66,32 +64,38 @@ nav {
 .nav-links a { 
     text-decoration: none; 
     color: var(--text-main); 
-    margin-left: 35px; 
+    margin-left: 30px; 
     font-weight: 600; 
     font-size: 0.95rem; 
-    transition: var(--transition);
+    transition: 0.3s ease;
 }
 
 .nav-links a:hover { 
     color: var(--primary); 
 }
 
-/* --- ĐỊNH DẠNG CHUNG CHO CÁC TRANG --- */
+/* --- PHÂN VÙNG HIỂN THỊ (BẤM MỚI HIỆN) --- */
 .section-full {
-    min-height: 100vh;
-    display: flex; 
+    min-height: 100vh; /* Cao bằng màn hình */
+    display: none;    /* MẶC ĐỊNH ẨN HẾT - Đây là chỗ quan trọng nhất */
     align-items: center; 
     justify-content: center;
     padding: 100px 0;
-    /* Hiệu ứng hiện trang khi bấm Menu */
-    animation: fadeInPage 0.6s ease-out forwards;
+    /* Hiệu ứng mờ dần khi hiện ra */
+    animation: fadeIn 0.6s ease-out;
 }
 
-@keyframes fadeInPage {
+/* Section nào có class .active hoặc được JS ép display:flex sẽ hiện */
+.section-full.active {
+    display: flex;
+}
+
+@keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
+/* --- CÁC NỀN TRANG KHÁC NHAU --- */
 .bg-dark { background: var(--navy-dark); color: white; }
 .contact-bg { background: #000a1a; color: white; }
 
@@ -100,173 +104,131 @@ nav {
     font-weight: 800; 
     text-align: center; 
     margin-bottom: 50px; 
-    letter-spacing: -1px;
 }
-
 .white { color: white; }
 
-/* --- TRANG CHỦ (HOME) --- */
-.hero-flex { 
-    display: flex; 
-    align-items: center; 
-    gap: 60px; 
-}
-
+/* --- TRANG CHỦ (HERO) --- */
+.hero-flex { display: flex; align-items: center; gap: 50px; }
 .hero-text { flex: 1.2; }
-
 .badge { 
-    background: #eef4ff; 
+    background: #e6efff; 
     color: var(--primary); 
     padding: 6px 16px; 
     border-radius: 100px; 
     font-size: 0.8rem; 
     font-weight: 700; 
-    text-transform: uppercase;
 }
 
-h1 { 
-    font-size: 4.5rem; 
-    margin: 25px 0; 
-    color: var(--navy-dark); 
-    line-height: 1.1;
-}
-
-.hero-text p { 
-    font-size: 1.25rem; 
-    color: var(--text-sub); 
-    max-width: 500px;
-}
+h1 { font-size: 4rem; margin: 20px 0; color: var(--navy-dark); line-height: 1.1; }
 
 .btn-main { 
     display: inline-block; 
     background: var(--primary); 
     color: white; 
-    padding: 18px 45px; 
-    border-radius: 14px; 
+    padding: 16px 40px; 
+    border-radius: 12px; 
     border: none;
     text-decoration: none; 
     font-weight: 700; 
-    margin-top: 35px; 
+    margin-top: 30px; 
     cursor: pointer;
-    box-shadow: 0 10px 25px rgba(0,70,190,0.25);
-    transition: var(--transition);
+    box-shadow: 0 10px 20px rgba(0,70,190,0.2);
+    transition: 0.3s;
 }
 
 .btn-main:hover { 
     transform: translateY(-5px); 
-    box-shadow: 0 15px 35px rgba(0,70,190,0.35);
-    background: #0037a4;
+    box-shadow: 0 15px 30px rgba(0,70,190,0.3);
 }
 
-.hero-img { flex: 0.8; display: flex; justify-content: center; }
 .hero-img img { 
-    width: 100%; 
-    max-width: 380px; 
-    height: 500px; 
-    border-radius: 40px; 
+    width: 350px; 
+    height: 480px; 
+    border-radius: 35px; 
     object-fit: cover; 
-    box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.1);
 }
 
 /* --- GIỚI THIỆU (ABOUT) --- */
 .about-content { width: 100%; }
 .about-card-main { 
     position: relative; 
-    border-radius: 30px; 
+    border-radius: 25px; 
     overflow: hidden; 
-    height: 350px; 
+    height: 320px; 
     margin-bottom: 30px;
 }
-.about-card-main img { width: 100%; height: 100%; object-fit: cover; opacity: 0.6; }
+.about-card-main img { width: 100%; height: 100%; object-fit: cover; opacity: 0.7; }
 .overlay-text { 
     position: absolute; 
     bottom: 0; 
-    padding: 50px; 
+    padding: 40px; 
     background: linear-gradient(transparent, rgba(0,0,0,0.9)); 
     width: 100%; 
 }
 
-.skills-grid { 
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    gap: 25px; 
-}
+.skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 .skill-box { 
     background: rgba(255,255,255,0.05); 
-    padding: 40px; 
-    border-radius: 25px; 
+    padding: 30px; 
+    border-radius: 20px; 
     border: 1px solid rgba(255,255,255,0.1); 
-    transition: var(--transition);
 }
-.skill-box:hover { background: rgba(255,255,255,0.1); }
-.skill-box i { font-size: 2.5rem; color: var(--primary); margin-bottom: 20px; }
+.skill-box i { font-size: 2.2rem; color: var(--primary); margin-bottom: 15px; }
 
 /* --- DỰ ÁN (PROJECTS) --- */
-.project-grid { 
-    display: grid; 
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 30px; 
-}
+.project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
 .project-card { 
     background: white; 
-    border-radius: 25px; 
+    border-radius: 20px; 
     overflow: hidden; 
-    box-shadow: 0 10px 40px rgba(0,0,0,0.04); 
-    transition: var(--transition);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+    transition: 0.3s;
     border: 1px solid #f0f0f0;
 }
-.project-card:hover { transform: translateY(-12px); }
-.project-card img { width: 100%; height: 220px; object-fit: cover; }
-.p-content { padding: 30px; }
-.tags { margin-top: 15px; }
+.project-card:hover { transform: translateY(-10px); }
+.project-card img { width: 100%; height: 200px; object-fit: cover; }
+.p-content { padding: 25px; color: var(--text-main); }
 .tags span { 
-    background: #f0f5ff; 
+    background: #f0f4f8; 
     color: var(--primary); 
-    padding: 5px 12px; 
-    border-radius: 8px; 
+    padding: 4px 10px; 
+    border-radius: 5px; 
     font-size: 0.75rem; 
     font-weight: 700; 
-    margin-right: 8px; 
+    margin-right: 5px; 
 }
 
 /* --- LIÊN HỆ (CONTACT) --- */
-.contact-flex { display: flex; gap: 70px; align-items: center; }
-.contact-form-box { flex: 1; }
-.contact-form-box input, .contact-form-box textarea { 
-    width: 100%;
-    padding: 18px; 
-    border-radius: 15px; 
+.contact-flex { display: flex; gap: 50px; align-items: center; }
+.contact-form-box { flex: 1; display: flex; flex-direction: column; gap: 15px; }
+input, textarea { 
+    padding: 16px; 
+    border-radius: 12px; 
     border: none; 
-    background: rgba(255,255,255,0.08); 
+    background: rgba(255,255,255,0.1); 
     color: white; 
-    margin-bottom: 20px;
-    font-size: 1rem;
+    outline: none; 
 }
-.contact-form-box button { width: 100%; }
-.contact-illustration { flex: 1; text-align: center; }
-.contact-illustration img { width: 100%; border-radius: 30px; margin-bottom: 30px; }
-.socials a { color: white; font-size: 1.8rem; margin: 0 15px; opacity: 0.6; transition: 0.3s; }
+.contact-illustration img { width: 100%; border-radius: 25px; margin-bottom: 20px; }
+.socials { display: flex; gap: 20px; font-size: 1.6rem; justify-content: center; }
+.socials a { color: white; opacity: 0.7; transition: 0.3s; }
 .socials a:hover { opacity: 1; color: var(--primary); }
 
 /* --- FOOTER --- */
 footer { 
-    padding: 50px 0; 
+    padding: 40px; 
     text-align: center; 
-    background: var(--white); 
+    color: var(--text-sub); 
+    font-size: 0.85rem; 
+    background: #fff; 
     border-top: 1px solid #eee;
-    color: var(--text-sub);
-    font-size: 0.9rem;
 }
 
-/* --- RESPONSIVE CHO ĐIỆN THOẠI --- */
-@media (max-width: 992px) {
-    h1 { font-size: 3rem; }
-    .hero-flex, .contact-flex { flex-direction: column; text-align: center; }
-    .hero-text p { margin: 0 auto; }
-    .project-grid { grid-template-columns: 1fr 1fr; }
-}
-
-@media (max-width: 600px) {
-    .project-grid, .skills-grid { grid-template-columns: 1fr; }
-    .hero-img img { height: 350px; }
+/* --- MOBILE --- */
+@media (max-width: 768px) {
+    .section-full { padding: 120px 20px; }
+    .hero-flex, .project-grid, .contact-flex { flex-direction: column; text-align: center; }
+    h1 { font-size: 2.6rem; }
+    .skills-grid { grid-template-columns: 1fr; }
 }
