@@ -10,7 +10,7 @@
 
     <header>
         <nav>
-            <div class="logo"><strong>NAM.DEV</strong></div>
+            <div class="logo">NAM.DEV</div>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -22,35 +22,78 @@
 
     <main>
         <section id="home">
-            <div class="hero-content">
-                <img src="avatar.jpg" alt="Nguyễn Thanh Nam"> <h1>Chào mừng bạn đến với Website của tôi</h1>
-                <p>Tôi là Nguyễn Thanh Nam, sinh viên CNTT đam mê sáng tạo các giải pháp công nghệ.</p>
+            <div class="container hero-content">
+                <div class="avatar-wrapper">
+                    <img src="https://i.pravatar.cc/300?img=11" alt="Nguyễn Thanh Nam" class="avatar">
+                </div>
+                <h1>Chào mừng bạn đến với Website của tôi</h1>
+                <p>Tôi là <strong>Nguyễn Thanh Nam</strong>, sinh viên CNTT đam mê sáng tạo các giải pháp công nghệ hiện đại.</p>
             </div>
         </section>
 
         <section id="about">
-            <h2>Giới thiệu bản thân</h2>
-            <div class="about-grid">
-                <div class="about-item">
-                    <h3>Thông tin chung</h3>
-                    <p>Họ tên: Nguyễn Thanh Nam</p>
-                    <p>Ngành: Công nghệ thông tin</p>
-                    <p>Định hướng: Full-stack Developer</p>
+            <div class="container">
+                <h2 class="section-title">Giới thiệu bản thân</h2>
+                <div class="about-grid">
+                    <div class="card">
+                        <h3>Thông tin chung</h3>
+                        <p><strong>Họ tên:</strong> Nguyễn Thanh Nam</p>
+                        <p><strong>Chuyên ngành:</strong> Công nghệ thông tin</p>
+                        <p><strong>Định hướng:</strong> Full-stack Developer</p>
+                    </div>
+                    <div class="card">
+                        <h3>Sở thích</h3>
+                        <p>Nghiên cứu các công nghệ mới, thiết kế giao diện UI/UX và học lập trình mỗi ngày.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Kỹ năng</h3>
+                        <ul>
+                            <li>HTML5 & CSS3</li>
+                            <li>Javascript</li>
+                            <li>Git & GitHub</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="about-item">
-                    <h3>Sở thích</h3>
-                    <p>Nghiên cứu công nghệ, thiết kế UI/UX.</p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2 class="section-title">Dự án cá nhân</h2>
+                <div class="project-list">
+                    <article class="card">
+                        <h3>Website Portfolio</h3>
+                        <p>Xây dựng trang web cá nhân giới thiệu bản thân và kỹ năng lập trình.</p>
+                    </article>
+                    <article class="card">
+                        <h3>App Quản lý học tập</h3>
+                        <p>Ứng dụng giúp theo dõi lịch học và quản lý bài tập hiệu quả hơn.</p>
+                    </article>
                 </div>
-                <div class="about-item">
-                    <h3>Kỹ năng</h3>
-                    <p>HTML, CSS, JS, Git.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title">Liên hệ</h2>
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <p>📧 nam.nguyen@example.com</p>
+                        <p>📞 0123 456 789</p>
+                    </div>
+                    <form>
+                        <input type="text" placeholder="Họ và tên" required>
+                        <input type="email" placeholder="Email của bạn" required>
+                        <textarea rows="4" placeholder="Tin nhắn của bạn..."></textarea>
+                        <button type="submit">Gửi tin nhắn</button>
+                    </form>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>© 2026 Nguyễn Thanh Nam</p>
+        <p>© 2026 Nguyễn Thanh Nam. All rights reserved.</p>
     </footer>
 
 </body>
