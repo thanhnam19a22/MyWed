@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nguyễn Thanh Nam | IT Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Nguyễn Thanh Nam | IT Professional Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,10 +12,10 @@
 
     <header>
         <nav class="container">
-            <div class="logo">NAM<span>TECH</span></div>
-            <ul class="nav-menu">
+            <div class="logo">NAM<span>DEV</span></div>
+            <ul class="nav-links">
                 <li><a href="#home">Trang chủ</a></li>
-                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#about">Về tôi</a></li>
                 <li><a href="#projects">Dự án</a></li>
                 <li><a href="#contact">Liên hệ</a></li>
             </ul>
@@ -23,94 +23,78 @@
     </header>
 
     <main>
-        <section id="home" class="hero-section">
-            <div class="container hero-wrapper">
-                <div class="hero-text">
-                    <span class="greeting">Chào mừng bạn đến với thế giới của tôi</span>
-                    <h1>Tôi là <span>Nguyễn Thanh Nam</span></h1>
-                    <p>Một Full-stack Developer tương lai, chuyên xây dựng các trải nghiệm kỹ thuật số hiện đại và tinh tế.</p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                    </div>
-                </div>
+        <section id="home">
+            <div class="container hero-box">
                 <div class="hero-image">
-                    <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=1000&auto=format&fit=crop" alt="Avatar">
+                    <img src="https://i.pravatar.cc/300?img=11" alt="Nguyễn Thanh Nam">
+                </div>
+                <div class="hero-text">
+                    <h1>Nguyễn Thanh Nam</h1>
+                    <p class="tagline">Sinh viên Công nghệ Thông tin | Web Developer | Tech Enthusiast</p>
+                    <p class="desc">Chào mừng bạn! Tôi là một người trẻ đam mê lập trình, luôn tìm kiếm giải pháp tối ưu cho mọi bài toán công nghệ.</p>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="about-section">
+        <section id="about">
             <div class="container">
-                <h2 class="title">Về Bản Thân</h2>
-                <div class="about-content">
+                <h2 class="title">Giới thiệu chi tiết</h2>
+                <div class="about-grid">
                     <div class="about-card">
-                        <i class="fas fa-user-graduate"></i>
-                        <h3>Định hướng</h3>
-                        <p>Sinh viên CNTT năm cuối, tập trung vào mảng Web Development và giải thuật tối ưu.</p>
-                    </div>
-                    <div class="about-card">
-                        <i class="fas fa-tools"></i>
-                        <h3>Kỹ năng</h3>
-                        <div class="skill-list">
-                            <span>HTML/CSS</span>
-                            <span>JavaScript</span>
-                            <span>ReactJS</span>
-                            <span>Python</span>
-                        </div>
+                        <i class="fas fa-university"></i>
+                        <h3>Học vấn</h3>
+                        <p>Đang theo học ngành Kỹ thuật Phần mềm. GPA tích lũy: 3.5/4.0.</p>
                     </div>
                     <div class="about-card">
-                        <i class="fas fa-heart"></i>
-                        <h3>Sở thích</h3>
-                        <p>Code dạo, đọc sách công nghệ và tham gia các buổi Hackathon cuối tuần.</p>
+                        <i class="fas fa-rocket"></i>
+                        <h3>Mục tiêu</h3>
+                        <p>Trở thành một chuyên gia Full-stack và làm việc tại các tập đoàn công nghệ lớn.</p>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="project-section">
-            <div class="container">
-                <h2 class="title">Dự án Tiêu biểu</h2>
-                <div class="project-grid">
-                    <div class="project-card">
-                        <div class="p-img" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800');"></div>
-                        <div class="p-info">
-                            <h3>Smart Home Dashboard</h3>
-                            <p>Ứng dụng quản lý thiết bị thông minh trong gia đình bằng điện thoại.</p>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="p-img" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800');"></div>
-                        <div class="p-info">
-                            <h3>Hệ thống Phân tích Data</h3>
-                            <p>Dùng Python để trực quan hóa dữ liệu người dùng trên sàn TMĐT.</p>
-                        </div>
+                    <div class="about-card">
+                        <i class="fas fa-code-branch"></i>
+                        <h3>Kỹ năng chính</h3>
+                        <p>HTML, CSS, ReactJS, Java, SQL, Git & Agile.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact-section">
+        <section id="projects">
             <div class="container">
-                <div class="contact-container">
+                <h2 class="title">Các dự án nổi bật</h2>
+                <div class="project-list">
+                    <div class="p-card">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400" alt="Project 1">
+                        <div class="p-content">
+                            <h3>Hệ thống quản lý thư viện</h3>
+                            <p>Xây dựng bằng Java Swing và MySQL, giúp quản lý hơn 10,000 đầu sách.</p>
+                        </div>
+                    </div>
+                    <div class="p-card">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400" alt="Project 2">
+                        <div class="p-content">
+                            <h3>Website tin tức TechNews</h3>
+                            <p>Sử dụng ReactJS để hiển thị tin tức công nghệ thời gian thực qua API.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2 class="title">Kết nối với tôi</h2>
+                <div class="contact-box">
                     <div class="contact-info">
-                        <h2>Liên hệ với Nam</h2>
-                        <p>Đừng ngần ngại kết nối nếu bạn có một ý tưởng tuyệt vời cần hiện thực hóa!</p>
-                        <div class="info-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>nam.it.2026@gmail.com</span>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-phone"></i>
-                            <span>(+84) 999 888 777</span>
-                        </div>
+                        <p><i class="fas fa-envelope"></i> nam.nguyen@email.com</p>
+                        <p><i class="fas fa-phone"></i> 0987 654 321</p>
+                        <p><i class="fas fa-map-marker-alt"></i> TP. Hồ Chí Minh, Việt Nam</p>
                     </div>
                     <form class="contact-form">
                         <input type="text" placeholder="Tên của bạn" required>
                         <input type="email" placeholder="Email của bạn" required>
-                        <textarea rows="4" placeholder="Lời nhắn..."></textarea>
-                        <button type="submit">Gửi tin nhắn <i class="fas fa-paper-plane"></i></button>
+                        <textarea rows="4" placeholder="Nhập lời nhắn..."></textarea>
+                        <button type="submit">Gửi tin nhắn ngay</button>
                     </form>
                 </div>
             </div>
@@ -118,7 +102,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Nguyễn Thanh Nam. Made with <i class="fas fa-heart"></i></p>
+        <p>© 2026 Nguyễn Thanh Nam - Made with passion for Tech.</p>
     </footer>
 
 </body>
