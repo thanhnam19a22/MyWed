@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NGUYỄN THANH NAM | PROFESSIONAL PORTFOLIO 2026</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,62 +12,53 @@
 
     <header>
         <nav class="container">
-            <div class="logo">🚀 NGUYỄN THANH NAM | PROFESSIONAL PORTFOLIO 2026</div>
+            <div class="logo">🚀 NAM<span>TECH</span></div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home">Trang Chủ</a></li>
+                <li><a href="#about">Giới Thiệu</a></li>
+                <li><a href="#projects">Dự Án</a></li>
+                <li><a href="#contact">Liên Hệ</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section id="home" class="section-full">
-            <div class="container text-center">
-                <div class="v-label">Vùng 1 - HOME</div>
-                <div class="avatar-container">
-                    <img src="https://i.ibb.co/3mN9fH4/nam-avatar.jpg" alt="Nguyễn Thanh Nam">
+            <div class="container hero-flex">
+                <div class="hero-text">
+                    <span class="badge">Welcome to my world</span>
+                    <h1>Nguyễn Thanh Nam</h1>
+                    <p>Sinh viên CNTT đam mê giải pháp công nghệ hiện đại và tối ưu hóa trải nghiệm người dùng.</p>
+                    <a href="#projects" class="btn-main">Khám phá dự án</a>
                 </div>
-                <h2>Chào mừng bạn đến với Website của tôi</h2>
-                <p class="hero-desc">Tôi là <strong>Nguyễn Thanh Nam</strong>, sinh viên CNTT đam mê sáng tạo các giải pháp công nghệ.</p>
+                <div class="hero-img">
+                    <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&q=80&w=600" alt="Nam Portrait">
+                </div>
             </div>
         </section>
 
-        <section id="about" class="section-full dark-blue-bg">
+        <section id="about" class="section-full bg-dark">
             <div class="container">
-                <div class="v-label white">Vùng 2 - ABOUT ME (Core Value)</div>
-                <div class="about-hero-card">
-                    <div class="about-content">
-                        <h3>Educational and so logical journey</h3>
-                        <p>Future developer goals to hit my professional journey on my real experience on tech industry.</p>
+                <h2 class="title">Giới Thiệu</h2>
+                <div class="about-content">
+                    <div class="about-card-main">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=800" alt="Tech Background">
+                        <div class="overlay-text">
+                            <h3>Hành trình phát triển</h3>
+                            <p>Tập trung vào phát triển kỹ năng tư duy logic và xây dựng nền tảng vững chắc trong ngành phần mềm.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="info-grid">
-                    <div class="info-item">
-                        <i class="fas fa-graduation-cap"></i>
-                        <h4>Học vấn & Mục tiêu</h4>
-                        <ul>
-                            <li>Degree info of Thanh Nam University 2026</li>
-                            <li>Future developer goals to hit on my real experience.</li>
-                        </ul>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-tools"></i>
-                        <h4>Kỹ năng & Sở thích</h4>
-                        <ul>
-                            <li>Hard/Soft skills</li>
-                            <li>High tech hobbies</li>
-                            <li>Minimalistic computers</li>
-                        </ul>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-heart"></i>
-                        <h4>Hành trình</h4>
-                        <ul>
-                            <li>Educational and logical growth</li>
-                            <li>Growing well in tech</li>
-                        </ul>
+                    <div class="skills-grid">
+                        <div class="skill-box">
+                            <i class="fas fa-code"></i>
+                            <h4>Lập trình</h4>
+                            <p>Sử dụng thành thạo Python, JavaScript, và React.</p>
+                        </div>
+                        <div class="skill-box">
+                            <i class="fas fa-paint-brush"></i>
+                            <h4>Thiết kế</h4>
+                            <p>Tối ưu giao diện mượt mà theo phong cách tối giản.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -75,30 +66,27 @@
 
         <section id="projects" class="section-full">
             <div class="container">
-                <div class="v-label">Vùng 3 - PROJECTS (The Portfolio)</div>
+                <h2 class="title">Dự Án Tiêu Biểu</h2>
                 <div class="project-grid">
                     <div class="project-card">
-                        <div class="p-thumb dark"></div>
-                        <h4>Hệ thống Quản lý Học tập (EdTech)</h4>
-                        <p>Hệ thống quản lý học tập hỗ trợ theo dõi tiến độ và tối ưu hiệu quả.</p>
-                        <div class="tags">
-                            <span>Python</span><span>React</span><span>SQL</span>
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=500" alt="Project 1">
+                        <div class="p-content">
+                            <h4>Hệ thống EdTech</h4>
+                            <div class="tags"><span>React</span><span>Python</span></div>
                         </div>
                     </div>
                     <div class="project-card">
-                        <div class="p-thumb nature"></div>
-                        <h4>Web App Du lịch</h4>
-                        <p>Web App đáp ứng mạnh hơn cho hành trình trải nghiệm của bạn.</p>
-                        <div class="tags">
-                            <span>Python</span><span>React</span><span>NextJS</span>
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=500" alt="Project 2">
+                        <div class="p-content">
+                            <h4>Web App Du lịch</h4>
+                            <div class="tags"><span>NextJS</span><span>SQL</span></div>
                         </div>
                     </div>
                     <div class="project-card">
-                        <div class="p-thumb ai"></div>
-                        <h4>AI Chat-bot</h4>
-                        <p>AI chat-bot là người đồng hành thông minh hỗ trợ giải đáp thắc mắc.</p>
-                        <div class="tags">
-                            <span>Python</span><span>React</span><span>AI</span>
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=500" alt="Project 3">
+                        <div class="p-content">
+                            <h4>AI Chat-bot</h4>
+                            <div class="tags"><span>AI</span><span>Flask</span></div>
                         </div>
                     </div>
                 </div>
@@ -107,20 +95,22 @@
 
         <section id="contact" class="section-full contact-bg">
             <div class="container">
-                <div class="v-label white">Vùng 4 - CONTACT (The Connection)</div>
+                <h2 class="title white">Liên Hệ</h2>
                 <div class="contact-flex">
-                    <form class="contact-form">
-                        <input type="text" placeholder="Name">
-                        <input type="email" placeholder="Email">
-                        <textarea placeholder="Message"></textarea>
-                        <button type="submit">Gửi tin nhắn</button>
-                    </form>
-                    <div class="contact-text">
-                        <p>Sẵn sàng hợp tác hoặc thảo luận về dự án mới. Hãy kết nối với tôi qua:</p>
-                        <div class="social-icons">
-                            <i class="fab fa-github"></i>
-                            <i class="fab fa-linkedin"></i>
-                            <i class="fas fa-envelope"></i>
+                    <div class="contact-form-box">
+                        <form>
+                            <input type="text" placeholder="Tên của bạn">
+                            <input type="email" placeholder="Email liên hệ">
+                            <textarea rows="4" placeholder="Bạn đang nghĩ gì?"></textarea>
+                            <button type="submit">Gửi thông điệp</button>
+                        </form>
+                    </div>
+                    <div class="contact-illustration">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=500" alt="Contact Us">
+                        <div class="socials">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
                         </div>
                     </div>
                 </div>
