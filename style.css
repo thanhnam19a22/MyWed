@@ -1,32 +1,31 @@
-/* 1. Thiết lập chung */
+/* 1. Reset & Thân trang */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f7f6; /* Nền xám trắng nhẹ */
+    background-color: #f8f9fa;
+    color: #2d3436;
 }
 
-/* 2. Header & Navigation */
+/* 2. Header hiện đại */
 header {
-    background-color: #004a99; /* Màu xanh chủ đạo */
-    color: #ffffff;
-    padding: 1rem 5%;
-    position: sticky;
+    background: rgba(0, 74, 153, 0.95); /* Xanh Navy trong suốt nhẹ */
+    backdrop-filter: blur(10px); /* Hiệu ứng kính mờ */
+    color: white;
+    padding: 15px 5%;
+    position: fixed;
+    width: 100%;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -34,127 +33,128 @@ nav ul {
     list-style: none;
 }
 
-nav ul li {
-    margin-left: 20px;
-}
-
 nav ul li a {
     color: white;
     text-decoration: none;
+    margin-left: 25px;
     font-weight: 500;
-    transition: color 0.3s;
+    transition: 0.3s;
 }
 
 nav ul li a:hover {
-    color: #00d4ff; /* Màu xanh sáng khi hover */
+    color: #00d4ff;
 }
 
-/* 3. Cấu trúc Layout */
+/* 3. Phân vùng trang (Sections) */
 section {
-    padding: 60px 10%;
-    max-width: 1200px;
-    margin: 0 auto;
+    min-height: 100vh;
+    padding: 120px 10% 80px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
 }
 
-h1, h2, h3 {
-    color: #004a99;
-    margin-bottom: 20px;
-}
-
-hr {
-    border: 0;
-    height: 1px;
-    background: #eee;
-    margin: 20px 0;
-}
-
-/* 4. Trang Home */
+/* Minh họa bằng màu nền và họa tiết cho từng vùng */
 #home {
+    background: linear-gradient(135deg, #ffffff 0%, #e1eefb 100%);
     text-align: center;
+}
+
+#about {
     background-color: #ffffff;
-    border-radius: 10px;
-    margin-top: 20px;
+    /* Thêm một đường kẻ trang trí bên trái */
+    border-left: 10px solid #004a99;
 }
 
-#home img {
-    border-radius: 50%; /* Làm ảnh bo tròn */
-    border: 5px solid #004a99;
-    margin-top: 20px;
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
+#projects {
+    background: #f1f7ff;
+    /* Hiệu ứng chấm bi minh họa cho nền */
+    background-image: radial-gradient(#004a99 0.5px, transparent 0.5px);
+    background-size: 20px 20px;
 }
 
-/* 5. Trang Projects (Dạng Card) */
-article {
-    background: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-left: 5px solid #004a99;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    border-radius: 5px;
+#contact {
+    background-color: #ffffff;
 }
 
-article img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-top: 10px;
+/* 4. Thành phần nội dung */
+h2 {
+    font-size: 2.8rem;
+    color: #004a99;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
 }
 
-/* 6. Trang Contact (Form) */
-form {
+/* Gạch chân trang trí dưới tiêu đề */
+h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #00d4ff;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Khối dự án & Thông tin (Cards) */
+.about-item, article {
     background: #ffffff;
     padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 74, 153, 0.05);
+    border: 1px solid #e1e8ed;
+    transition: transform 0.3s ease;
 }
 
-table {
-    width: 100%;
+.about-item:hover, article:hover {
+    transform: translateY(-10px); /* Hiệu ứng bay lên khi di chuột */
+    box-shadow: 0 15px 30px rgba(0, 74, 153, 0.1);
+}
+
+/* 5. Ảnh chân dung ở Home */
+.hero-content img {
+    width: 280px;
+    height: 280px;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; /* Dạng hình khối trừu tượng */
+    background: #004a99;
+    padding: 10px;
+    object-fit: cover;
+    animation: morph 8s ease-in-out infinite;
+}
+
+@keyframes morph {
+    0% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+    50% { border-radius: 50% 50% 20% 80% / 25% 80% 20% 75%; }
+    100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+}
+
+/* 6. Form liên hệ */
+form {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
 }
 
 input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    border: 2px solid #f1f3f5;
+    background: #f8f9fa;
+    transition: 0.3s;
 }
 
-button {
-    background-color: #004a99;
-    color: white;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background 0.3s;
-}
-
-button:hover {
-    background-color: #003366;
+input:focus, textarea:focus {
+    border-color: #004a99;
+    outline: none;
+    background: white;
 }
 
 /* 7. Footer */
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
+    background: #00264d;
     color: white;
-    margin-top: 50px;
-}
-
-/* 8. Responsive (Cho điện thoại) */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-    }
-    nav ul {
-        margin-top: 15px;
-    }
-    section {
-        padding: 40px 5%;
-    }
+    padding: 30px;
+    text-align: center;
 }
